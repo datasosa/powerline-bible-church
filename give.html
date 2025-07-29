@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Give to Powerline Bible Church - Support our ministry and missions through your generous donations">
+  <title>Give - Powerline Bible Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="give">
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="branding">
+        <img src="images/logo.png" alt="Powerline Bible Church Logo" class="logo">
+        <span class="site-title">Powerline Bible Church</span>
+      </a>
+      
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="sermons.html" class="nav-link">Sermons</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="give.html" class="nav-link active">Give</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section class="hero-section small-hero give-hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Give With Purpose</h1>
+        <p class="hero-subtitle">Your generosity fuels our mission</p>
+      </div>
+    </section>
+
+    <section class="giving-options section">
+      <div class="container">
+        <h2 class="section-title">Ways to Give</h2>
+        <p class="section-subtitle">"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver." <br>2 Corinthians 9:7 (NIV)</p>
+        
+        <div class="giving-cards">
+          <div class="giving-card">
+            <div class="giving-icon">
+              <i class="fas fa-church"></i>
+            </div>
+            <h3>Tithes</h3>
+            <p>Honor God with the first fruits of your labor (Proverbs 3:9-10)</p>
+            <button class="btn give-btn" data-type="tithe">Give Tithes</button>
+          </div>
+          
+          <div class="giving-card">
+            <div class="giving-icon">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <h3>Offerings</h3>
+            <p>Support the ongoing work of the ministry (Exodus 35:4-5)</p>
+            <button class="btn give-btn" data-type="offering">Give Offering</button>
+          </div>
+          
+          <div class="giving-card">
+            <div class="giving-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Special Seeds</h3>
+            <p>Sow into specific projects and needs (Ecclesiastes 11:1-2)</p>
+            <button class="btn give-btn" data-type="seed">Give Special Seed</button>
+          </div>
+          
+          <div class="giving-card">
+            <div class="giving-icon">
+              <i class="fas fa-globe-africa"></i>
+            </div>
+            <h3>Missions</h3>
+            <p>Support our local and international missions (Matthew 28:19-20)</p>
+            <button class="btn give-btn" data-type="missions">Give to Missions</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="payment-methods section accent-bg">
+      <div class="container">
+        <h2 class="section-title">Payment Methods</h2>
+        
+        <div class="method-tabs">
+          <button class="method-tab active" data-tab="bank">Bank Transfer</button>
+          <button class="method-tab" data-tab="online">Online Payment</button>
+          <button class="method-tab" data-tab="ussd">USSD</button>
+          <button class="method-tab" data-tab="cash">Cash/Check</button>
+        </div>
+        
+        <div class="method-content active" id="bank">
+          <div class="method-details">
+            <h3><i class="fas fa-university"></i> Bank Transfer</h3>
+            <div class="bank-details">
+              <div class="bank-info">
+                <p><strong>Bank Name:</strong> Zenith Bank</p>
+                <p><strong>Account Name:</strong> Powerline Bible Church</p>
+                <p><strong>Account Number:</strong> 1234567890</p>
+                <p><strong>Sort Code:</strong> 057000000</p>
+              </div>
+              <div class="bank-info">
+                <p><strong>Bank Name:</strong> GTBank</p>
+                <p><strong>Account Name:</strong> Powerline Bible Church</p>
+                <p><strong>Account Number:</strong> 0987654321</p>
+                <p><strong>Sort Code:</strong> 058000000</p>
+              </div>
+            </div>
+            <p class="note">Please include your name and giving type (e.g., "Tithe", "Offering") as payment reference.</p>
+          </div>
+        </div>
+        
+        <div class="method-content" id="online">
+          <div class="method-details">
+            <h3><i class="fas fa-credit-card"></i> Online Payment</h3>
+            <p>Give securely online using your debit/credit card or bank account:</p>
+            
+            <form class="payment-form" id="online-payment-form">
+              <div class="form-group">
+                <label for="amount">Amount (₦)</label>
+                <input type="number" id="amount" name="amount" min="100" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="giving-type">Giving Type</label>
+                <select id="giving-type" name="giving-type" required>
+                  <option value="">Select giving type</option>
+                  <option value="tithe">Tithe</option>
+                  <option value="offering">Offering</option>
+                  <option value="seed">Special Seed</option>
+                  <option value="missions">Missions</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              
+              <button type="submit" class="btn">
+                <i class="fas fa-lock"></i> Proceed to Payment
+              </button>
+              
+              <div class="payment-security">
+                <i class="fas fa-shield-alt"></i>
+                <span>Secure SSL Encrypted Payment</span>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="method-content" id="ussd">
+          <div class="method-details">
+            <h3><i class="fas fa-mobile-alt"></i> USSD Banking</h3>
+            <p>Give quickly using your mobile phone:</p>
+            
+            <div class="ussd-options">
+              <div class="ussd-card">
+                <div class="ussd-code">*966*1234567890*Amount#</div>
+                <p>For Zenith Bank customers</p>
+              </div>
+              
+              <div class="ussd-card">
+                <div class="ussd-code">*737*0987654321*Amount#</div>
+                <p>For GTBank customers</p>
+              </div>
+              
+              <div class="ussd-card">
+                <div class="ussd-code">*xyz*Powerline*Amount#</div>
+                <p>For other banks (replace xyz with your bank's code)</p>
+              </div>
+            </div>
+            
+            <p class="note">After transfer, please send details to +234 812 345 6789 via WhatsApp/SMS</p>
+          </div>
+        </div>
+        
+        <div class="method-content" id="cash">
+          <div class="method-details">
+            <h3><i class="fas fa-money-bill-wave"></i> Cash/Check</h3>
+            <p>You can give physically during our services or mail a check to:</p>
+            
+            <address class="cash-address">
+              <p><strong>Powerline Bible Church</strong></p>
+              <p>Odo-Olowu Bus Stop</p>
+              <p>Oshodi-Apapa Expressway</p>
+              <p>Ijeshatedo, Lagos</p>
+              <p>Nigeria</p>
+            </address>
+            
+            <p class="note">For checks, make payable to "Powerline Bible Church"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="giving-testimonials section">
+      <div class="container">
+        <h2 class="section-title">Blessings of Giving</h2>
+        
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left"></i>
+              <p>When I started tithing faithfully, God opened financial doors I never imagined. My business tripled within a year!</p>
+              <div class="testimonial-author">
+                <strong>Bro. Emmanuel</strong>
+                <span>Member since 2018</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left"></i>
+              <p>Sowing into the building project was my greatest joy. Shortly after, I got promoted at work with double salary.</p>
+              <div class="testimonial-author">
+                <strong>Sister Adebayo</strong>
+                <span>Member since 2015</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left"></i>
+              <p>God honored my seed when I gave to missions. My daughter got a full scholarship abroad the same month!</p>
+              <div class="testimonial-author">
+                <strong>Bro. & Sis. Okonkwo</strong>
+                <span>Members since 2012</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="scripture-verse">
+          <p>"Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap. For with the measure you use, it will be measured to you."</p>
+          <p class="verse">Luke 6:38 (NIV)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="giving-faq section">
+      <div class="container">
+        <h2 class="section-title">Giving FAQs</h2>
+        
+        <div class="faq-accordion">
+          <div class="faq-item" id="faq-1">
+            <button class="faq-question">
+              <span>Why should I give to the church?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Giving is an act of worship and obedience to God. Your giving supports the ministry's work, helps spread the gospel, and enables us to serve our community. Most importantly, it demonstrates trust in God as our provider and opens the door for His blessings in your life (Malachi 3:10-12).</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" id="faq-2">
+            <button class="faq-question">
+              <span>What's the difference between tithes and offerings?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p><strong>Tithes</strong> are 10% of your income, given as worship to God (Leviticus 27:30). <strong>Offerings</strong> are gifts given above the tithe, expressing gratitude and supporting specific needs (Exodus 35:4-5). Both are important but serve different purposes in your spiritual growth.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" id="faq-3">
+            <button class="faq-question">
+              <span>How do I get a receipt for my giving?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>For online payments, you'll automatically receive an email receipt. For bank transfers, send your payment details to finance@powerlinebible.org. For cash/check donations, request a receipt from the church office. All annual giving statements are provided each January for tax purposes.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" id="faq-4">
+            <button class="faq-question">
+              <span>Can I give to a specific project or need?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! We have several special projects you can support - building fund, missions, children's ministry, etc. Simply indicate the project when giving or contact the church office for current needs. We ensure all designated gifts are used as specified.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <img src="images/logo.png" alt="Church Logo" class="footer-logo">
+          <p>Wisdom House - Lagos, Nigeria. Proclaiming the undiluted Word of Faith since 1988.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="give.html">Give</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <address>
+            <p><i class="fas fa-map-marker-alt"></i> Odo-Olowu Bus Stop, Oshodi-Apapa Expressway, Ijeshatedo</p>
+            <p><i class="fas fa-phone"></i> +234 812 345 6789</p>
+            <p><i class="fas fa-envelope"></i> info@powerlinebible.org</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">&copy; <span id="current-year">2025</span> Powerline Bible Church. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

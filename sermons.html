@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Watch and listen to powerful sermons from Powerline Bible Church - Wisdom House in Lagos, Nigeria">
+  <title>Sermons - Powerline Bible Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="sermons">
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="branding">
+        <img src="images/logo.png" alt="Powerline Bible Church Logo" class="logo">
+        <span class="site-title">Powerline Bible Church</span>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="sermons.html" class="nav-link active">Sermons</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="give.html" class="nav-link">Give</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section small-hero sermons-hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Weekly Sermons</h1>
+        <p class="hero-subtitle">Messages to nourish your spirit</p>
+      </div>
+    </section>
+
+    <section class="section sermon-archive">
+      <div class="container">
+        <div class="sermon-filters">
+          <div class="filter-group">
+            <label for="series-filter"><i class="fas fa-tag"></i> Filter by Series:</label>
+            <select id="series-filter" class="filter-select">
+              <option value="all">All Series</option>
+              <option value="faith">Faith Foundations</option>
+              <option value="relationships">Godly Relationships</option>
+              <option value="prosperity">Divine Prosperity</option>
+              <option value="healing">Healing & Miracles</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <label for="speaker-filter"><i class="fas fa-user"></i> Filter by Speaker:</label>
+            <select id="speaker-filter" class="filter-select">
+              <option value="all">All Speakers</option>
+              <option value="bishop">Bishop Lawrence Osagie</option>
+              <option value="guest">Guest Ministers</option>
+              <option value="assistant">Assistant Pastors</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <label for="date-filter"><i class="fas fa-calendar"></i> Filter by Date:</label>
+            <select id="date-filter" class="filter-select">
+              <option value="all">All Dates</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+            </select>
+          </div>
+        </div>
+
+          <div class="featured-sermon">
+            <div class="featured-thumbnail">
+             <img src="images/sermon-featured.jpg" alt="Featured Sermon" loading="lazy">
+             <a href="watch.html?type=sermon&id=the-power-of-your-words" class="play-btn large" aria-label="Watch Featured Sermon"><i class="fas fa-play"></i></a>
+          </div>
+
+          <div class="featured-details">
+           <span class="sermon-badge">Featured</span>
+           <h2>The Power of Your Words</h2>
+           <p class="sermon-meta">
+             <span><i class="fas fa-user"></i> Bishop Lawrence Osagie</span>
+             <span><i class="fas fa-calendar"></i> June 9, 2025</span>
+             <span><i class="fas fa-tag"></i> Faith Foundations</span>
+           </p>
+           <p class="sermon-excerpt">In this powerful message, Bishop Osagie teaches from Proverbs 18:21 about how your words create your world and how to harness the creative power in your tongue.</p>
+             <div class="sermon-actions">
+             <a href="watch.html?type=sermon&id=the-power-of-your-words" class="btn"><i class="fas fa-play-circle"></i> Watch Now</a>
+             <a href="#" class="btn btn-outline"><i class="fas fa-download"></i> Download MP3</a>
+             <a href="#" class="btn btn-outline"><i class="fas fa-share-alt"></i> Share</a>
+           </div>
+         </div>
+       </div>
+
+       
+        <div class="sermon-grid">
+          <div class="sermon-card" data-series="faith" data-speaker="bishop" data-date="2025">
+            <div class="sermon-thumbnail">
+              <img src="images/sermon1.jpg" alt="Walking by Faith" loading="lazy">
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+              <span class="duration">45:22</span>
+            </div>
+            <div class="sermon-info">
+              <h3>Walking by Faith</h3>
+              <p class="sermon-meta">Bishop Osagie | May 26, 2025</p>
+              <div class="sermon-actions">
+                <a href="#" class="btn-sm"><i class="fas fa-headphones"></i> Listen</a>
+                <a href="#" class="btn-sm"><i class="fas fa-download"></i> Download</a>
+                <a href="#" class="btn-sm"><i class="fas fa-book-open"></i> Notes</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sermon-card" data-series="relationships" data-speaker="bishop" data-date="2025">
+            <div class="sermon-thumbnail">
+              <img src="images/sermon2.jpg" alt="Godly Relationships" loading="lazy">
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+              <span class="duration">52:18</span>
+            </div>
+            <div class="sermon-info">
+              <h3>Godly Relationships</h3>
+              <p class="sermon-meta">Bishop Osagie | May 19, 2025</p>
+              <div class="sermon-actions">
+                <a href="#" class="btn-sm"><i class="fas fa-headphones"></i> Listen</a>
+                <a href="#" class="btn-sm"><i class="fas fa-download"></i> Download</a>
+                <a href="#" class="btn-sm"><i class="fas fa-book-open"></i> Notes</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sermon-card" data-series="prosperity" data-speaker="guest" data-date="2025">
+            <div class="sermon-thumbnail">
+              <img src="images/sermon3.jpg" alt="Financial Wisdom" loading="lazy">
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+              <span class="duration">38:45</span>
+            </div>
+            <div class="sermon-info">
+              <h3>Financial Wisdom</h3>
+              <p class="sermon-meta">Rev. David Oke | May 12, 2025</p>
+              <div class="sermon-actions">
+                <a href="#" class="btn-sm"><i class="fas fa-headphones"></i> Listen</a>
+                <a href="#" class="btn-sm"><i class="fas fa-download"></i> Download</a>
+                <a href="#" class="btn-sm"><i class="fas fa-book-open"></i> Notes</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sermon-card" data-series="healing" data-speaker="bishop" data-date="2025">
+            <div class="sermon-thumbnail">
+              <img src="images/sermon4.jpg" alt="Divine Healing" loading="lazy">
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+              <span class="duration">41:30</span>
+            </div>
+            <div class="sermon-info">
+              <h3>Divine Healing</h3>
+              <p class="sermon-meta">Bishop Osagie | May 5, 2025</p>
+              <div class="sermon-actions">
+                <a href="#" class="btn-sm"><i class="fas fa-headphones"></i> Listen</a>
+                <a href="#" class="btn-sm"><i class="fas fa-download"></i> Download</a>
+                <a href="#" class="btn-sm"><i class="fas fa-book-open"></i> Notes</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sermon-card" data-series="faith" data-speaker="assistant" data-date="2025">
+            <div class="sermon-thumbnail">
+              <img src="images/sermon5.jpg" alt="Faith That Works" loading="lazy">
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+              <span class="duration">47:15</span>
+            </div>
+            <div class="sermon-info">
+              <h3>Faith That Works</h3>
+              <p class="sermon-meta">Pastor Grace Adeleke | April 28, 2025</p>
+              <div class="sermon-actions">
+                <a href="#" class="btn-sm"><i class="fas fa-headphones"></i> Listen</a>
+                <a href="#" class="btn-sm"><i class="fas fa-download"></i> Download</a>
+                <a href="#" class="btn-sm"><i class="fas fa-book-open"></i> Notes</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sermon-card" data-series="relationships" data-speaker="bishop" data-date="2025">
+            <div class="sermon-thumbnail">
+              <img src="images/sermon6.jpg" alt="Marriage Covenant" loading="lazy">
+              <button class="play-btn"><i class="fas fa-play"></i></button>
+              <span class="duration">55:20</span>
+            </div>
+            <div class="sermon-info">
+              <h3>Marriage Covenant</h3>
+              <p class="sermon-meta">Bishop Osagie | April 21, 2025</p>
+              <div class="sermon-actions">
+                <a href="#" class="btn-sm"><i class="fas fa-headphones"></i> Listen</a>
+                <a href="#" class="btn-sm"><i class="fas fa-download"></i> Download</a>
+                <a href="#" class="btn-sm"><i class="fas fa-book-open"></i> Notes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <a href="#" class="page-nav disabled"><i class="fas fa-chevron-left"></i> Previous</a>
+          <div class="page-numbers">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span>...</span>
+            <a href="#">8</a>
+          </div>
+          <a href="#" class="page-nav">Next <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sermon-subscription accent-bg">
+      <div class="container subscription-container">
+        <div class="subscription-content">
+          <h2 class="section-title"><i class="fas fa-podcast"></i> Never Miss a Sermon</h2>
+          <p>Subscribe to our podcast and get new messages delivered automatically</p>
+          <div class="podcast-badges">
+            <a href="#" class="podcast-badge"><img src="images/apple-podcast.png" alt="Apple Podcasts" loading="lazy"></a>
+            <a href="#" class="podcast-badge"><img src="images/spotify.png" alt="Spotify" loading="lazy"></a>
+            <a href="#" class="podcast-badge"><img src="images/google-podcast.png" alt="Google Podcast" loading="lazy"></a>
+          </div>
+        </div>
+        <div class="subscription-image">
+          <img src="images/podcast-devices.png" alt="Podcast on devices" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <img src="images/logo.png" alt="Church Logo" class="footer-logo">
+          <p>Wisdom House - Lagos, Nigeria. Proclaiming the undiluted Word of Faith since 1988.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="give.html">Give</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <address>
+            <p><i class="fas fa-map-marker-alt"></i> Odo-Olowu Bus Stop, Oshodi-Apapa Expressway, Ijeshatedo</p>
+            <p><i class="fas fa-phone"></i> +234 812 345 6789</p>
+            <p><i class="fas fa-envelope"></i> info@powerlinebible.org</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">&copy; <span id="current-year">2025</span> Powerline Bible Church. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

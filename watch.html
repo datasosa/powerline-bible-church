@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Watch powerful messages and media from Powerline Bible Church - Wisdom House in Lagos, Nigeria">
+  <title>Watch - Powerline Bible Church</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="watch-page"> <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="branding">
+        <img src="images/logo.png" alt="Powerline Bible Church Logo" class="logo">
+        <span class="site-title">Powerline Bible Church</span>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="sermons.html" class="nav-link active">Sermons</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="give.html" class="nav-link">Give</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section small-hero media-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bg-sermons-hero.jpg');">
+      <div class="hero-content">
+        <h1 class="hero-title" id="media-hero-title">Content Title Loading...</h1>
+        <p class="hero-subtitle" id="media-hero-subtitle">Powerful messages and inspiring content</p>
+      </div>
+    </section>
+
+    <section class="section media-single-content">
+      <div class="container media-single-container">
+        <div class="media-video-player">
+          <div class="video-container">
+            <div id="media-content-placeholder" class="loading-spinner"></div>
+          </div>
+        </div>
+
+        <div class="media-details-wrapper">
+          <h2 id="media-main-title" class="section-title"></h2>
+          <p class="media-meta">
+            <span id="media-author"><i class="fas fa-user"></i> Loading Speaker/Author...</span>
+            <span id="media-date"><i class="fas fa-calendar"></i> Loading Date...</span>
+            <span id="media-category"><i class="fas fa-tag"></i> Loading Category...</span>
+          </p>
+          <p id="media-description"></p>
+
+          <div class="media-actions single-page-actions">
+            <a id="media-download-link" href="#" class="btn btn-outline" download style="display:none;"><i class="fas fa-download"></i> Download</a>
+            <a id="media-notes-link" href="#" class="btn btn-outline" target="_blank" style="display:none;"><i class="fas fa-book-open"></i> View Notes</a>
+            <button class="btn btn-outline" onclick="copyShareLink()"><i class="fas fa-share-alt"></i> Share This Content</button>
+          </div>
+
+          <div class="related-content-section" style="margin-top: 3rem;">
+            <h3>Related Content</h3>
+            <div class="sermon-grid related-grid" id="related-content-grid">
+              <p>Loading related content...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <img src="images/logo.png" alt="Church Logo" class="footer-logo">
+          <p>Wisdom House - Lagos, Nigeria. Proclaiming the undiluted Word of Faith since 1988.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="give.html">Give</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <address>
+            <p><i class="fas fa-map-marker-alt"></i> Odo-Olowu Bus Stop, Oshodi-Apapa Expressway, Ijeshatedo</p>
+            <p><i class="fas fa-phone"></i> +234 812 345 6789</p>
+            <p><i class="fas fa-envelope"></i> info@powerlinebible.org</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">© <span id="current-year">2025</span> Powerline Bible Church. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="media-data.js"></script> <script src="watch.js"></script>     </body>
+</html>
+
